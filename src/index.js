@@ -1,12 +1,13 @@
-const express = require('express');
+const app = require('./app');
+// const express = require('express');
 // const multer = require('multer');
-require('./db/mongoose');
+// require('./db/mongoose');
 // const User = require('./models/user');
 // const Task = require('./models/task');
-const userRouter = require('./routers/user');
-const taskRouter = require('./routers/task');
+// const userRouter = require('./routers/user');
+// const taskRouter = require('./routers/task');
 
-const app = express();
+// const app = express();
 const port = process.env.PORT || 3000;
 // const upload = multer({
 //     dest:'images',
@@ -38,10 +39,10 @@ const port = process.env.PORT || 3000;
 // },(error,req,res,next)=>{
 //     res.status(400).send({error:error.message});
 // });
-app.use(express.json());
+// app.use(express.json());
 
-app.use(taskRouter);
-app.use(userRouter);
+// app.use(taskRouter);
+// app.use(userRouter);
 
 
 
