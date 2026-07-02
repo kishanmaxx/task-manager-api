@@ -11,7 +11,9 @@
     "dev": "env-cmd -f config/dev.env nodemon src/index.js",
     "test": "env-cmd -f config/test.env jest --watch"
   },
-  "jest": {},
+  "jest":{
+    "testEnvironment": "node"
+  },
   "dependencies": {
     "@sendgrid/mail": "^8.1.6",
     "bcryptjs": "^3.0.3",
@@ -26,7 +28,6 @@
   "devDependencies": {
     "env-cmd": "^11.0.0",
     "jest": "^30.4.2",
-    "nodemon": "^3.1.14",
-    "supertest": "^7.2.2"
+    "nodemon": "^3.1.14"
   }
 }
